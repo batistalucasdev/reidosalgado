@@ -20,7 +20,7 @@
 
         if (valido) {
             alert('Login realizado com sucesso!');
-            window.location.href = 'home.html';
+            window.location.href = 'https://reidosalgadoteresina.infinityfreeapp.com/';
         } else {
             alert('Usuário ou senha incorretos!');
         }
