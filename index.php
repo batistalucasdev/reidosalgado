@@ -1,9 +1,11 @@
 <?php
 // Simulação de usuários cadastrados
 $usuarios = [
-    ['login' => 'victor', 'senha' => 'victor'],
-    ['login' => 'julio', 'senha' => 'julio'],
-    ['login' => 'admin', 'senha' => 'admin']
+    ['login' => 'lucas', 'senha' => 'lucas'],
+    ['login' => 'admin', 'senha' => 'admin'],
+    ['login' => '1234', 'senha' => '1234'],
+    ['login' => 'mislene', 'senha' => 'mislene'],
+    ['login' => 'batistalucasbr@gmail.com', 'senha' => 'ReidoSalgado2025']
 ];
 
 // Variáveis para mensagens e validações
@@ -22,9 +24,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($valido) {
         $mensagem = "<p style='color: green;'>Login realizado com sucesso!</p>";
-        // Redirecionar para outra página
-        // header("Location: home.php");
-        // exit;
+        //Redirecionar para outra página
+        header("Location: welcome.php");
+        exit;
     } else {
         $mensagem = "<p style='color: red;'>Usuário ou senha incorretos!</p>";
     }
@@ -67,7 +69,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <img src="https://www.mishainfotech.com/images/InventoryManagement.png" alt="Imagem de Estoque">
         </div>
         <div class="form">
-            <h1>Rei do Salgado</h1>
+            <h1>Rei do Salgado Teresina</h1>
             <form method="POST" action="">
                 <div class="form-header">
                     <div class="title">
